@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-quarkus-167848167
+  namespace: bpibhboe-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/hacdev/build_service@sha256:8ce7b517f2ce5a91e7d12f5b50c7e2f8128db3463d397089f8fa0bcda71e9d19
+        name: my-java-quarkus
+        resources: {}
+status: {}
